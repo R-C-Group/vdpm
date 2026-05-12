@@ -24,6 +24,13 @@ git -C vggt checkout 44b3afb
 conda create -n vdpm python=3.12 -y
 # conda remove --name vdpm --all
 conda activate vdpm
+# 针对5090安装cuda13.0
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+pip install torch torchvision torchaudio \
+  --extra-index-url https://download.pytorch.org/whl/cu128 \
+  --timeout 1000
+  
 pip install -r requirements.txt
 
 # 验证torch
