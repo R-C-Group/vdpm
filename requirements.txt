@@ -17,4 +17,4 @@ jaxtyping
 hydra-submitit-launcher
 scikit-learn
 plotly
-git+https://github.com/facebookresearch/vggt.git@44b3afb
+git+ssh://git@github.com/facebookresearch/vggt.git@44b3afb
