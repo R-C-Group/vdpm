@@ -16,7 +16,13 @@ First, clone the repository and create a Conda environment (install [Miniconda](
 ```bash
 git clone git@github.com:eldar/vdpm.git
 cd vdpm
+
+# VGGT 放在项目目录下的 vggt/，便于本地改代码；需与原先锁定提交一致时再执行 checkout
+git clone https://github.com/facebookresearch/vggt.git vggt
+git -C vggt checkout 44b3afb
+
 conda create -n vdpm python=3.12 -y
+# conda remove --name vdpm --all
 conda activate vdpm
 pip install -r requirements.txt
 

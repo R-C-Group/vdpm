@@ -1,6 +1,9 @@
 data/
 checkpoints/
 
+# 本地 VGGT 源码（可编辑安装）；若要用 submodule 或把修改纳入本仓库，可删此行
+vggt/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
