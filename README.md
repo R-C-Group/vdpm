@@ -1,21 +1,24 @@
 <div align="center">
-<h1>V-DPM: 4D Video Reconstruction with Dynamic Point Maps</h1>
+<h1>V-DPM: 4D Video Reconstruction with Dynamic Point Maps 实验</h1>
 
-<a href="https://www.robots.ox.ac.uk/~vgg/research/vdpm/"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
-<a href="https://huggingface.co/spaces/edgarsucar/vdpm"><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue'></a>
+[comment]: <> (  <h2 align="center">PAPER</h2>)
+  <h3 align="center">
+  <a href="https://github.com/eldar/vdpm">Github</a>
+  | <a href="https://arxiv.org/pdf/2601.09499">Paper</a>
+  </h3>
 
-**[Visual Geometry Group, University of Oxford](https://www.robots.ox.ac.uk/~vgg/)**
-
-
-[Edgar Sucar](https://edgarsucar.github.io/)\*, [Eldar Insafutdinov](https://eldar.insafutdinov.com/)\*, [Zihang Lai](https://scholar.google.com/citations?user=31eXgMYAAAAJ), [Andrea Vedaldi](https://www.robots.ox.ac.uk/~vedaldi/)
 </div>
 
 ## Setup
 
-First, clone the repository and setup a virtual environment with [uv](https://github.com/astral-sh/uv):
+First, clone the repository and create a Conda environment (install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or Anaconda if you do not have `conda` yet).
 
 ```bash
-conda create -n vdpm python=3.12
+git clone git@github.com:eldar/vdpm.git
+cd vdpm
+conda create -n vdpm python=3.12 -y
+conda activate vdpm
+pip install -r requirements.txt
 ```
 
 ## Viser demo
