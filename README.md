@@ -39,7 +39,13 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available(), tor
 
 ## Viser demo
 ```bash
+conda activate vdpm
+# https://hf-mirror.com/ 这个~应该大部分模型都有 （https://hf-mirror.com/edgarsucar/vdpm）
+# export HF_ENDPOINT=https://hf-mirror.com
+# wget -c -t 0 https://hf-mirror.com/edgarsucar/vdpm/resolve/main/model.pt \-O vdpm_model.pt
 python visualise.py ++vis.input_video=examples/videos/camel.mp4
+# 若网络连不上huggingface，可先下载模型https://huggingface.co/edgarsucar/vdpm/resolve/main/model.pt
+# 然后放置到/home/kwanwaipang/.cache/torch/hub/checkpoints/vdpm_model.pt
 ```
 
 ## Gradio demo
