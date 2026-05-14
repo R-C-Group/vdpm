@@ -1,6 +1,7 @@
 __pycache__/
 outputs/
 *.egg-info/
+grg_video/
 
 # data/
 # checkpoints/

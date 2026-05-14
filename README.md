@@ -48,6 +48,8 @@ python visualise.py ++vis.input_video=examples/videos/camel.mp4
 # 然后放置到/home/kwanwaipang/.cache/torch/hub/checkpoints/vdpm_model.pt
 ```
 
+python visualise.py ++vis.input_video=examples/grg_video/yingnan.mp4
+
 ## Gradio demo
 ```bash
 python gradio_demo.py
